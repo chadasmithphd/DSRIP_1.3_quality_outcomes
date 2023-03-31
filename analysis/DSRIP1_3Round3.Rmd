@@ -1,0 +1,427 @@
+---
+title: "1.3 DSRIP Quality Related Outcomes: Round3"
+subtitle: "Hye-Chung, Chad, Franchesca"
+date: 3/30/22
+output:
+  powerpoint_presentation:
+    reference_doc: tamu_template.potx
+  html_document:
+    toc: true
+    toc_depth: 2
+    dev: 'svg'
+---
+```{r, include = FALSE, echo=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+options(knitr.kable.NA = '-')
+source("analysis.R")
+```
+# Outstanding Questions/Todos
+
+- Fix p value in notes p<=
+- goals for each year and measure
+- what is the incentive
+- is there a sheet with payments?
+- add year & dy to axis
+
+# Data Sources
+
+Category C Data File
+
+- File: Category C Summary Worksheet    
+
+- Currently have DY7 (2018), DY8 (2019), DY9 (2020), DY10 (2021)  
+   
+# Evaluation Design Plan - Overall
+
+```{r, echo=FALSE}
+knitr::include_graphics("reference/eq13.png")
+```
+
+# Measure 1.3.1 Design Plan
+
+```{r, echo=FALSE}
+knitr::include_graphics("reference/131.png")
+```
+
+# Measure 1.3.1 - Overall Measure
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+m1$summary_stats
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+m1$prim_vis
+```
+:::
+::::::  
+
+
+# Measure 1.3.1 - Analysis of Achievement Rates
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+ma1$uw_fig
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+ma1$wt_fig
+```
+:::
+::::::  
+
+# Measure 1.3.1 - Analysis of Achievement Rates (Box Plots)
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+ma1$uw_box_plot
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+ma1$wt_box_plot
+```
+:::
+::::::  
+
+# Measure 1.3.2 - Design Plan
+
+```{r, echo = FALSE}
+knitr::include_graphics("reference/132.png")
+knitr::include_graphics("reference/1322.png")
+```
+
+# Measure 1.3.2 - Overall Measure
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+m2$summary_stats
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+m2$prim_vis
+```
+:::
+::::::   
+
+
+# Measure 1.3.2 - Analysis of Achievement Rates
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+ma2$uw_fig
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+ma2$wt_fig
+```
+:::
+::::::  
+
+# Measure 1.3.2 - Analysis of Achievement Rates (Box Plots)
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+ma2$uw_box_plot
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+ma2$wt_box_plot
+```
+:::
+::::::  
+
+# Measure 1.3.3 - Design Plan 
+
+```{r, echo = FALSE}
+knitr::include_graphics("reference/1331.png")
+knitr::include_graphics("reference/1332.png")
+```
+
+# Measure 1.3.3 - Overall Measure
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+m3$summary_stats
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+m3$prim_vis
+```
+:::
+::::::  
+
+
+# Measure 1.3.3 - Analysis of Achievement Rates
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+ma3$uw_fig
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+ma3$wt_fig
+```
+:::
+::::::  
+
+# Measure 1.3.3 - Analysis of Achievement Rates (Box Plots)
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+ma3$uw_box_plot
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+ma3$wt_box_plot
+```
+:::
+::::::  
+
+# Measure 1.3.4 - Design Plan
+
+```{r, echo = FALSE}
+knitr::include_graphics("reference/1341.png")
+knitr::include_graphics("reference/1342.png")
+```
+
+# Measure 1.3.4 - Overall Measure
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+m4$summary_stats
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+m4$prim_vis
+```
+:::
+::::::  
+
+
+# Measure 1.3.4 - Analysis of Achievement Rates
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+ma4$uw_fig
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+ma4$wt_fig
+```
+:::
+::::::  
+
+# Measure 1.3.4 - Analysis of Achievement Rates (Box Plots)
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+ma4$uw_box_plot
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+ma4$wt_box_plot
+```
+:::
+::::::  
+
+# Measure 1.3.5 - Design Plan
+
+```{r, echo = FALSE}
+knitr::include_graphics("reference/1351.png")
+knitr::include_graphics("reference/1352.png")
+```
+
+# Measure 1.3.5 - Overall Measure
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+m5$summary_stats
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+m5$prim_vis
+```
+:::
+::::::  
+
+# Measure 1.3.5 - Analysis of Achievement Rates
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+ma5$uw_fig
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+ma5$wt_fig
+```
+:::
+::::::  
+
+# Measure 1.3.5 - Analysis of Achievement Rates (Box Plots)
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+ma5$uw_box_plot
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+ma5$wt_box_plot
+```
+:::
+::::::  
+
+# Next steps...
+
+- Establish outline of report
+
+# Questions
+
+
+# Backup
+
+
+# Measure 1.3.1 - Percent Change
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+ma1$pct_catdy9
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+ma1$pct_catdy10
+```
+:::
+::::::  
+
+# Measure 1.3.2 - Percent Change
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+ma2$pct_catdy9
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+ma2$pct_catdy10
+```
+:::
+::::::  
+
+# Measure 1.3.3 - Percent Change
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+ma3$pct_catdy9
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+ma3$pct_catdy10
+```
+:::
+::::::  
+
+
+# Measure 1.3.4 - Percent Change
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+ma4$pct_catdy9
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+ma4$pct_catdy10
+```
+:::
+::::::  
+
+# Measure 1.3.5 - Percent Change
+
+:::::: {.columns}
+::: {.column}
+```{r, echo = FALSE}
+ma5$pct_catdy9
+
+```
+:::
+
+::: {.column}
+```{r, echo = FALSE}
+ma5$pct_catdy10
+```
+:::
+::::::  
