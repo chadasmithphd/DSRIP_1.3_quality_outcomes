@@ -7,8 +7,8 @@ output:
 
 ---
 
-```{r, include = FALSE, echo=FALSE}
-knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE) 
+```{r, include = FALSE, echo=TRUE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = TRUE) 
 
 
 source("/Users/tardis/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniversity/Team - waiver2_final - Documents/DSRIP/DSRIP_1.3_quality_outcomes/analysis/settings.R")
