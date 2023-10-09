@@ -1,7 +1,7 @@
 ---
-title: "1.3 DSRIP Quality Related Outcomes: Round3"
-subtitle: "Hye-Chung, Chad, Franchesca"
-date: 3/30/22
+title: "1.3 DSRIP Quality Related Outcomes: Round4"
+subtitle: "Justin"
+date: 5/12/23
 output:
   powerpoint_presentation:
     reference_doc: tamu_template.potx
@@ -16,8 +16,6 @@ source("analysis.R")
 - Fix p value in notes p<=
 - goals for each year and measure
 - what is the incentive
-- is there a sheet with payments?
-- add year & dy to axis
 
 # Data Sources
 

@@ -1,0 +1,364 @@
+---
+title: "DSRIP Chapter Updates"
+date: "2023-10-06"
+output: 
+  word_document:
+      reference_docx: Waiver_report_styles.dotx
+
+---
+
+```{r, message = FALSE, include = FALSE, echo = TRUE}
+knitr::opts_chunk$set(warn = FALSE) 
+
+
+source("/Users/tardis/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniversity/Team - waiver2_final - Documents/DSRIP/DSRIP_1.3_quality_outcomes/analysis/settings.R")
+source("/Users/tardis/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniversity/Team - waiver2_final - Documents/DSRIP/DSRIP_1.1_survey/network/analysis/likertAnalysis.R", chdir = TRUE)
+source("/Users/tardis/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniversity/Team - waiver2_final - Documents/apm/analysis/oeq.R", chdir = TRUE)
+source("/Users/tardis/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniversity/Team - waiver2_final - Documents/DSRIP/DSRIP_1.1_survey/network/analysis/part_rates.r", chdir = TRUE)
+source("/Users/tardis/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniversity/Team - waiver2_final - Documents/DSRIP/DSRIP_1.1_survey/network/analysis/1_1_new.r", chdir = TRUE)
+source("/Users/tardis/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniversity/Team - waiver2_final - Documents/DSRIP/DSRIP_1.3_quality_outcomes/analysis/analysis.R")
+source("/Users/tardis/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniversity/Team - waiver2_final - Documents/DSRIP/DSRIP_1.4_pophealth_PPEs/analysis/analysis.R")
+
+
+
+#Emily's path
+#source("/Users/em/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniversity/Team - waiver2_final - analysis (1)/settings.R")
+#source("/Users/em/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniversity/Team - waiver2_final - analysis/likertAnalysis.R", chdir = TRUE)
+#source("/Users/em/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniversity/Team - waiver2_final - analysis/part_rates.r", chdir = TRUE)
+#source("/Users/em/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniversity/Team - waiver2_final - analysis/1_1_new.r", chdir = TRUE)
+#source("/Users/em/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniversity/Team - waiver2_final - analysis (1)/analysis.R")
+#source("/Users/em/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniversity/Team - waiver2_final - analysis (2)/analysis.R")
+
+# Need to add oeq.R from APM to emiilys path
+```
+
+- [x] Get correct gray
+- [ ] Color pallete
+- [ ] Test with theme
+- [ ] Verify dates and years are correct
+- [ ] check table rounding
+- [ ] check table when missing
+- [ ] find franchescas tables
+- [ ] Need to add oeq.R from APM to emiilys path
+- [ ] can i add a line above texas in the rhp participation
+
+
+###### Table II.7 RHP participation rates by year
+
+```{r}
+part_rate
+
+```
+
+###### Figure II.3. Strength of network ties 
+(Measure 1.1.3 - Density)
+
+```{r}
+dpm113denplot
+
+```
+
+###### Figure II.4. Average density of network ties
+(JSD, RS, DSA)
+
+```{r}
+dpm114jsdplot
+
+dpm114trsplot
+
+dpm114dsaplot
+
+```
+
+###### Figure II.5. Average centralization of network ties
+
+```{r}
+
+dpm115jsdplot
+
+dpm115trsplot
+
+dpm115dsaplot
+
+```
+
+## Measure 1.1.6 
+
+Attitude toward Collaboration
+
+To understand the attitudes of DSRIP-participating providers toward DSRIP’s impact on collaborative relationships, specifically care coordination, providers were asked about the extent to which they agreed or disagreed with the following statements: 
+
+•	DSRIP has increased the level of care coordination between different DSRIP providers.  
+
+•	DSRIP has increased the level of care coordination between DSRIP and non-DSRIP providers.
+
+###### DSRIP has increased the level of care coordination between different DSRIP providers.
+
+```{r}
+new_dc1$prim_vis_bar_tot
+```
+
+`r new_dc1$caption`
+
+###### DSRIP has increased the level of care coordination between DSRIP and non-DSRIP providers.
+
+```{r}
+new_dc2$prim_vis_bar_tot
+```
+
+`r new_dc2$caption`
+
+###### Table II.11 Health Information Exchanges used by Participating Providers
+
+
+```{r}
+
+hie_other_oeq
+
+```
+
+`r caption_oeq_org_count`
+
+
+###### Table II.12 Number and percentage of external organizations that provided DSRIP data
+
+```{r}
+
+out_data_oeq
+
+```
+
+`r caption_out`
+
+###### Figure II.4 Overall Provider Achievement for A1-508 Rate of ED Visits for Diabetes
+
+```{r}
+m1$prim_vis
+
+```
+
+###### Figure II.5 Population Impact: Change in Weighted Mean Rate: A1-508 Rate of ED Visits for Diabetes
+
+```{r}
+ma1$wt_fig
+```
+
+`r ma1$caption_w`
+
+###### Figure II.6 Overall Provider Achievement for A2-509 Rate of ED Visits for CHF, Angina, and Hypertension
+
+```{r}
+m2$prim_vis
+```
+
+###### Figure II.7 Population Impact: Change in Weighted Mean Rate: A2-509 Rate of ED Visits for CHF, Angina, and Hypertension
+
+```{r}
+ma2$wt_fig
+```
+
+`r ma2$caption_w`
+
+###### Figure II.8 Overall Provider Achievement for H2-510 Rate for Behavioral Health and Substance Abuse
+
+```{r}
+m3$prim_vis
+```
+
+###### Figure II.9 Population Impact: Change in Weighted Mean Rate: H2-510 Rate for Behavioral Health and Substance Abuse
+(Comparison of Real and Target Weighted Mean Rates)
+
+```{r}
+ma3$wt_fig
+```
+
+`r ma3$caption_w`
+
+###### Figure II.10 Overall Provider Achievement for C1-502 Rate for the Adult Acute Composite Indicator
+
+```{r}
+m4$prim_vis
+```
+
+###### Figure II.11 Population Impact: Change in Weighted Mean Rate: C1-502 Rate for the Adult Acute Composite Indicator
+(Comparison of Real and Target Weighted Mean Rates)
+
+
+```{r}
+ma4$wt_fig
+```
+
+
+`r ma4$caption_w`
+
+###### Figure II.12 Overall Provider Achievement for D1-503 Rate for the Child Acute Composite Indicator
+
+```{r}
+m5$prim_vis
+```
+
+###### Figure II.13 Population Impact: Change in Weighted Mean Rate: D1-503 Rate for the Child Acute Composite Indicator
+(Comparison of Real and Target Weighted Mean Rates)
+
+```{r}
+ma5$wt_fig
+```
+
+`r ma5$caption_w`
+
+###### Figure II.14 Potentially Preventable Admissions
+(PPA)
+**Change y axis**
+
+```{r}
+ppa_sum_graph_w
+```
+
+`r ppa_res_weight_statement`
+
+###### Figure II.15 Potentially Preventable Readmissions
+(PPR)
+
+```{r}
+ppr_sum_graph_w
+```
+
+`r ppr_res_weight_statement`
+
+###### Figure II.16 Potentially Preventable Complications
+(PPC)
+
+```{r}
+ppc_sum_graph_w
+```
+
+`r ppc_res_weight_statement`
+
+###### Figure II.17 Potentially Preventable ED Visits Actual-to-Expected Ratios
+(PPV)
+
+```{r}
+ppv_sum_graph_w
+```
+
+`r ppv_res_weight_statement`
+
+# Appendix
+
+###### Table B.20 Provider Measure Achievement: A1-508 Rate of ED Visits for Diabetes
+###### Rate of Emergency Department Visits for Diabetes (A1-508: DSRIP Category C Measure 1.3.1)
+###### Summary Statistics by Year and Measure Achievement: Rate of Emergency Department Visits for Diabetes
+
+
+```{r}
+m1$summary_stats
+```
+
+###### Figure B.6 Change in Unweighted Mean Rate: A1-508 Rate of ED Visits for Diabetes
+(Comparison of Real and Target Mean Rates)
+
+```{r}
+ma1$uw_fig
+```
+
+`r ma1$caption_u`
+
+###### Table B.21 Provider Measure Achievement: A2-509 Rate of ED Visits for CHF, Angina, and Hypertension
+###### Summary Statistics by Year and Measure Achievement: Rate of Emergency Department Visits for CHF, Angina, and Hypertension
+
+```{r}
+m2$summary_stats
+```
+
+###### Figure B.3 Change in Unweighted Mean Rate: A2-509 Rate of ED Visits for CHF, Angina, and Hypertension
+(Comparison of Real and Target Mean Rates)
+
+```{r}
+ma2$uw_fig
+```
+
+`r ma2$caption_u`
+
+###### Table B.22 Provider Measure Achievement: H2-510 Rate of Emergency Department Visits for Behavioral Health and Substance Abuse
+###### Summary Statistics by Year and Measure Achievement: Rate of Emergency Department Visits for Behavioral Health and Substance Abuse
+
+```{r}
+m3$summary_stats
+```
+
+###### Figure B.4 Change in Unweighted Mean Rate: H2-510 Rate of Emergency Department Visits for Behavioral Health and Substance Abuse
+(Comparison of Real and Target Mean Rates)
+
+```{r}
+ma3$uw_fig
+```
+
+`r ma3$caption_u`
+
+###### Table B.23 Provider Measure Achievement: C1-502 PQI 91 Adult Acute Composite Indicator
+###### Summary Statistics by Year and Measure Achievement: Prevention Quality Indicator 91: Adult Acute Composite Indicator
+
+```{r}
+m4$summary_stats
+```
+
+###### Figure B.5 Change in Unweighted Mean Rate: C1-502 PQI 91 Adult Acute Composite Indicator
+(Comparison of Real and Target Mean Rates)
+
+```{r}
+ma4$uw_fig
+```
+
+`r ma4$caption_u`
+
+###### Table B.24 Provider Measure Achievement: D1-503 PDI 91 Child Acute Composite Indicator
+###### Summary Statistics by Year and Measure Achievement: Pediatric Quality Indicator 91: Child Acute Composite Indicator
+
+```{r}
+m5$summary_stats
+```
+
+###### Figure B.6 Change in Unweighted Mean Rate: D1-503 PDI 91 Child Acute Composite Indicator
+(Comparison of Real and Target Mean Rates)
+
+```{r}
+ma5$uw_fig
+```
+
+`r ma5$caption_u`
+
+###### Table B.25 Summary Statistics by Year: Potentially Preventable Admissions (PPA)
+###### Summary Statistics by Year: 1.4.1 Potentially Preventable Admissions (PPA)
+
+```{r}
+ ppa_summary_stats 
+```
+
+`r ppa_summary_note`
+
+###### Table B.26 Summary Statistics by Year: Potentially Preventable Readmissions (PPR)
+###### Summary Statistics by Year: 1.4.2 Potentially Preventable Readmissions (PPR)
+
+```{r}
+ppr_summary_stats 
+```
+
+`r ppr_summary_note`
+
+###### Table B.27 Summary Statistics by Year: Potentially Preventable Complications (PPC)
+###### Summary Statistics by Year: 1.4.3 Potentially Preventable Complications (PPC)
+
+```{r}
+ppc_summary_stats 
+```
+
+`r ppc_summary_note`
+
+###### Table B.28 Summary Statistics by Year: Potentially Preventable Emergency Department Visits (PPV)
+###### Summary Statistics by Year: 1.4.4 Potentially Preventable Emergency Deparment visits (PPV)
+
+```{r}
+ppv_summary_stats
+```
+
+`r ppv_summary_note`
