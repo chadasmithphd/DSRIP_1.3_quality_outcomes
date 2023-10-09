@@ -7,6 +7,7 @@ set_flextable_defaults(
         font.size = 10, 
         font.color = "#303030",
         padding = 2, 
+        na_str = "-",
         table.layout = "autofit")
         
 
