@@ -37,7 +37,6 @@ source("/Users/tardis/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniv
 - [ ] check table rounding
 - [ ] check table when missing
 - [ ] Need to add oeq.R from APM to emilys path
-- [ ] can i add a line above texas in the rhp participation
 
 # Questions
 - Should I change axis on 1.4 from 17, 18, etc to the same DYY (YYYY)
@@ -46,6 +45,19 @@ source("/Users/tardis/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniv
 
 ```{r}
 part_rate
+
+```
+
+###### Measure 1.1.2 
+
+(JSD, RS, DSA)
+
+```{r}
+dpm112jsdplot
+
+dpm112trsplot
+
+dpm112dsaplot
 
 ```
 
