@@ -1,14 +1,14 @@
 ---
 title: "DSRIP Chapter Updates"
-date: "2023-10-06"
+date: "2023-10-09"
 output: 
   word_document:
       reference_docx: Waiver_report_styles.dotx
 
 ---
 
-```{r, message = FALSE, include = FALSE, echo = TRUE}
-knitr::opts_chunk$set(warn = FALSE) 
+```{r, message = FALSE, include = FALSE, echo = TRUE, warn = FALSE}
+knitr::opts_chunk$set() 
 
 
 source("/Users/tardis/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniversity/Team - waiver2_final - Documents/DSRIP/DSRIP_1.3_quality_outcomes/analysis/settings.R")
@@ -38,7 +38,7 @@ source("/Users/tardis/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniv
 - [ ] Verify dates and years are correct
 - [ ] check table rounding
 - [ ] check table when missing
-- [ ] find franchescas tables
+- [x] find franchescas tables
 - [ ] Need to add oeq.R from APM to emiilys path
 - [ ] can i add a line above texas in the rhp participation
 
