@@ -7,8 +7,8 @@ output:
 
 ---
 
-```{r, message = FALSE, include = FALSE, echo = TRUE, warning = FALSE}
-#knitr::opts_chunk$set() 
+```{r, include = FALSE, echo=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE) 
 
 
 source("/Users/tardis/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniversity/Team - waiver2_final - Documents/DSRIP/DSRIP_1.3_quality_outcomes/analysis/settings.R")
@@ -31,13 +31,16 @@ source("/Users/tardis/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniv
 
 # Need to add oeq.R from APM to emiilys path
 ```
-
+# TO DO 
 - [ ] Color pallete
 - [ ] Verify dates and years are correct
 - [ ] check table rounding
 - [ ] check table when missing
-- [ ] Need to add oeq.R from APM to emiilys path
+- [ ] Need to add oeq.R from APM to emilys path
 - [ ] can i add a line above texas in the rhp participation
+
+# Questions
+- Should I change axis on 1.4 from 17, 18, etc to the same DYY (YYYY)
 
 ###### Table II.7 RHP participation rates by year
 
