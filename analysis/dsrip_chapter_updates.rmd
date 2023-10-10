@@ -153,7 +153,6 @@ m1$prim_vis
 ma1$wt_fig
 ```
 
-`r ma1$caption_w`
 
 ###### Figure II.6 Overall Provider Achievement for A2-509 Rate of ED Visits for CHF, Angina, and Hypertension
 
@@ -167,7 +166,6 @@ m2$prim_vis
 ma2$wt_fig
 ```
 
-`r ma2$caption_w`
 
 ###### Figure II.8 Overall Provider Achievement for H2-510 Rate for Behavioral Health and Substance Abuse
 
@@ -181,8 +179,6 @@ m3$prim_vis
 ```{r}
 ma3$wt_fig
 ```
-
-`r ma3$caption_w`
 
 ###### Figure II.10 Overall Provider Achievement for C1-502 Rate for the Adult Acute Composite Indicator
 
@@ -198,9 +194,6 @@ m4$prim_vis
 ma4$wt_fig
 ```
 
-
-`r ma4$caption_w`
-
 ###### Figure II.12 Overall Provider Achievement for D1-503 Rate for the Child Acute Composite Indicator
 
 ```{r}
@@ -213,8 +206,6 @@ m5$prim_vis
 ```{r}
 ma5$wt_fig
 ```
-
-`r ma5$caption_w`
 
 ###### Figure II.14 Potentially Preventable Admissions
 (PPA)
