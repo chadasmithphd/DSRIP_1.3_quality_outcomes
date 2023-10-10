@@ -264,6 +264,8 @@ ppv_sum_graph_w
 m1$summary_stats
 ```
 
+`r m1$note`
+
 ###### Figure B.6 Change in Unweighted Mean Rate: A1-508 Rate of ED Visits for Diabetes
 (Comparison of Real and Target Mean Rates)
 
@@ -279,6 +281,8 @@ ma1$uw_fig
 ```{r}
 m2$summary_stats
 ```
+
+`r m2$note`
 
 ###### Figure B.3 Change in Unweighted Mean Rate: A2-509 Rate of ED Visits for CHF, Angina, and Hypertension
 (Comparison of Real and Target Mean Rates)
@@ -296,6 +300,7 @@ ma2$uw_fig
 m3$summary_stats
 ```
 
+`r m3$note`
 ###### Figure B.4 Change in Unweighted Mean Rate: H2-510 Rate of Emergency Department Visits for Behavioral Health and Substance Abuse
 (Comparison of Real and Target Mean Rates)
 
@@ -312,6 +317,8 @@ ma3$uw_fig
 m4$summary_stats
 ```
 
+`r m4$note`
+
 ###### Figure B.5 Change in Unweighted Mean Rate: C1-502 PQI 91 Adult Acute Composite Indicator
 (Comparison of Real and Target Mean Rates)
 
@@ -327,6 +334,8 @@ ma4$uw_fig
 ```{r}
 m5$summary_stats
 ```
+
+`r m5$note`
 
 ###### Figure B.6 Change in Unweighted Mean Rate: D1-503 PDI 91 Child Acute Composite Indicator
 (Comparison of Real and Target Mean Rates)
