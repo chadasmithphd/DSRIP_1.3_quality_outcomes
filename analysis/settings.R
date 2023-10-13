@@ -1,3 +1,6 @@
+library(ggpattern)
+library(magick) 
+library(ggplot2) 
 library(flextable)
 
 set_name <-  "Chad" #"Emily" 
@@ -44,7 +47,7 @@ theme_hhsc <- function(){
       axis.text.x = element_text(            #margin for axis text
                     margin=margin(5)),
       legend.position = 'bottom',
-      legend.key.size = unit(.30, 'cm'),
+      legend.key.size = unit(2, 'cm'),
       legend.text = element_text(size=7.5),
       legend.title = element_text(size=9),
     )
@@ -54,4 +57,10 @@ theme_hhsc <- function(){
 # Colors
 # Custom theme
 
+tamu_patterns <- c('gray0',
+                   'horizontal',
+                   'crosshatch',
+                   'vertical', 
+                   'hs_diagcross')
+                   
 mycolors <- c("white", "#d4d4d4", "#666666")
