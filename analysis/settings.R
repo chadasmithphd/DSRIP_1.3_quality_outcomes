@@ -44,10 +44,8 @@ theme_hhsc <- function(){
                                family = font,            #axis famuly
                                size = 8,                 #font size
                                vjust = 0.5),                
-      axis.text.x = element_text(            #margin for axis text
-                    margin=margin(5)),
       legend.position = 'bottom',
-      legend.key.size = unit(2, 'cm'),
+      legend.key.size = unit(.5, 'cm'),
       legend.text = element_text(size=7.5),
       legend.title = element_text(size=9),
     )

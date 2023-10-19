@@ -1,13 +1,13 @@
 ---
 title: "DSRIP Chapter Updates"
-date: "2023-10-09"
+date: "2023-10-19"
 output: 
   word_document:
       reference_docx: Waiver_report_styles.dotx
 
 ---
 
-```{r, include = FALSE, echo=TRUE}
+```{r, include = FALSE, echo=TRUE, fig.retina = 2}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = TRUE) 
 
 
@@ -31,12 +31,6 @@ source("/Users/tardis/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniv
 
 # Need to add oeq.R from APM to emiilys path
 ```
-# TO DO 
-
-- [ ] Need to add oeq.R from APM to emilys path
-
-# Questions
-- Should I change axis on 1.4 from 17, 18, etc to the same DYY (YYYY)
 
 ###### Table II.7 RHP participation rates by year
 
@@ -49,7 +43,7 @@ part_rate
 
 (JSD, RS, DSA)
 
-```{r}
+```{r,  fig.retina = 2}
 dpm112jsdplot
 
 dpm112trsplot
@@ -61,7 +55,7 @@ dpm112dsaplot
 ###### Figure II.3. Strength of network ties 
 (Measure 1.1.3 - Density)
 
-```{r}
+```{r,  fig.retina = 2}
 dpm113denplot
 
 ```
@@ -69,7 +63,7 @@ dpm113denplot
 ###### Figure II.4. Average density of network ties
 (JSD, RS, DSA)
 
-```{r}
+```{r,  fig.retina = 2}
 dpm114jsdplot
 
 dpm114trsplot
@@ -80,7 +74,7 @@ dpm114dsaplot
 
 ###### Figure II.5. Average centralization of network ties
 
-```{r}
+```{r,  fig.retina = 2}
 
 dpm115jsdplot
 
@@ -102,7 +96,7 @@ To understand the attitudes of DSRIP-participating providers toward DSRIP’s im
 
 ###### DSRIP has increased the level of care coordination between different DSRIP providers.
 
-```{r}
+```{r,  fig.retina = 2}
 new_dc1$prim_vis_bar_tot
 ```
 
@@ -110,7 +104,7 @@ new_dc1$prim_vis_bar_tot
 
 ###### DSRIP has increased the level of care coordination between DSRIP and non-DSRIP providers.
 
-```{r}
+```{r,  fig.retina = 2}
 new_dc2$prim_vis_bar_tot
 ```
 
@@ -119,7 +113,7 @@ new_dc2$prim_vis_bar_tot
 ###### Table II.11 Health Information Exchanges used by Participating Providers
 
 
-```{r}
+```{r, fig.retina = 2}
 
 hie_other_oeq
 
@@ -130,7 +124,7 @@ hie_other_oeq
 
 ###### Table II.12 Number and percentage of external organizations that provided DSRIP data
 
-```{r}
+```{r,  fig.retina = 2}
 
 out_data_oeq
 
@@ -140,14 +134,14 @@ out_data_oeq
 
 ###### Figure II.4 Overall Provider Achievement for A1-508 Rate of ED Visits for Diabetes
 
-```{r}
+```{r, fig.retina = 2}
 m1$prim_vis
 
 ```
 
 ###### Figure II.5 Population Impact: Change in Weighted Mean Rate: A1-508 Rate of ED Visits for Diabetes
 
-```{r}
+```{r, fig.retina = 2}
 ma1$wt_fig
 ```
 
@@ -155,34 +149,34 @@ ma1$wt_fig
 
 ###### Figure II.6 Overall Provider Achievement for A2-509 Rate of ED Visits for CHF, Angina, and Hypertension
 
-```{r}
+```{r, fig.retina = 2}
 m2$prim_vis
 ```
 
 ###### Figure II.7 Population Impact: Change in Weighted Mean Rate: A2-509 Rate of ED Visits for CHF, Angina, and Hypertension
 
-```{r}
+```{r, fig.retina = 2}
 ma2$wt_fig
 ```
 `r ma2$caption_w`
 
 ###### Figure II.8 Overall Provider Achievement for H2-510 Rate for Behavioral Health and Substance Abuse
 
-```{r}
+```{r, fig.retina = 2}
 m3$prim_vis
 ```
 
 ###### Figure II.9 Population Impact: Change in Weighted Mean Rate: H2-510 Rate for Behavioral Health and Substance Abuse
 (Comparison of Real and Target Weighted Mean Rates)
 
-```{r}
+```{r, fig.retina = 2}
 ma3$wt_fig
 ```
 
 `r ma3$caption_w`
 ###### Figure II.10 Overall Provider Achievement for C1-502 Rate for the Adult Acute Composite Indicator
 
-```{r}
+```{r, fig.retina = 2}
 m4$prim_vis
 ```
 
@@ -190,21 +184,21 @@ m4$prim_vis
 (Comparison of Real and Target Weighted Mean Rates)
 
 
-```{r}
+```{r, fig.retina = 2}
 ma4$wt_fig
 ```
 
 `r ma4$caption_w`
 ###### Figure II.12 Overall Provider Achievement for D1-503 Rate for the Child Acute Composite Indicator
 
-```{r}
+```{r, fig.retina = 2}
 m5$prim_vis
 ```
 
 ###### Figure II.13 Population Impact: Change in Weighted Mean Rate: D1-503 Rate for the Child Acute Composite Indicator
 (Comparison of Real and Target Weighted Mean Rates)
 
-```{r}
+```{r, fig.retina = 2}
 ma5$wt_fig
 ```
 
@@ -213,7 +207,7 @@ ma5$wt_fig
 (PPA)
 **Change y axis**
 
-```{r}
+```{r,  fig.retina = 2}
 ppa_sum_graph_w
 ```
 
@@ -222,7 +216,7 @@ ppa_sum_graph_w
 ###### Figure II.15 Potentially Preventable Readmissions
 (PPR)
 
-```{r}
+```{r, fig.retina = 2}
 ppr_sum_graph_w
 ```
 
@@ -231,7 +225,7 @@ ppr_sum_graph_w
 ###### Figure II.16 Potentially Preventable Complications
 (PPC)
 
-```{r}
+```{r, fig.retina = 2}
 ppc_sum_graph_w
 ```
 
@@ -240,7 +234,7 @@ ppc_sum_graph_w
 ###### Figure II.17 Potentially Preventable ED Visits Actual-to-Expected Ratios
 (PPV)
 
-```{r}
+```{r, fig.retina = 2}
 ppv_sum_graph_w
 ```
 
@@ -262,7 +256,7 @@ m1$summary_stats
 ###### Figure B.6 Change in Unweighted Mean Rate: A1-508 Rate of ED Visits for Diabetes
 (Comparison of Real and Target Mean Rates)
 
-```{r}
+```{r, fig.retina = 2}
 ma1$uw_fig
 ```
 
@@ -280,7 +274,7 @@ m2$summary_stats
 ###### Figure B.3 Change in Unweighted Mean Rate: A2-509 Rate of ED Visits for CHF, Angina, and Hypertension
 (Comparison of Real and Target Mean Rates)
 
-```{r}
+```{r, fig.retina = 2}
 ma2$uw_fig
 ```
 
@@ -297,7 +291,7 @@ m3$summary_stats
 ###### Figure B.4 Change in Unweighted Mean Rate: H2-510 Rate of Emergency Department Visits for Behavioral Health and Substance Abuse
 (Comparison of Real and Target Mean Rates)
 
-```{r}
+```{r, fig.retina = 2}
 ma3$uw_fig
 ```
 
@@ -315,7 +309,7 @@ m4$summary_stats
 ###### Figure B.5 Change in Unweighted Mean Rate: C1-502 PQI 91 Adult Acute Composite Indicator
 (Comparison of Real and Target Mean Rates)
 
-```{r}
+```{r, fig.retina = 2}
 ma4$uw_fig
 ```
 
@@ -333,7 +327,7 @@ m5$summary_stats
 ###### Figure B.6 Change in Unweighted Mean Rate: D1-503 PDI 91 Child Acute Composite Indicator
 (Comparison of Real and Target Mean Rates)
 
-```{r}
+```{r, fig.retina = 2}
 ma5$uw_fig
 ```
 
