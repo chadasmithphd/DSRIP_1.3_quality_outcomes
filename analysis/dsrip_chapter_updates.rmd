@@ -119,7 +119,6 @@ hie_other_oeq
 
 ```
 
-`r caption_oeq_org_count`
 
 
 ###### Table II.12 Number and percentage of external organizations that provided DSRIP data
