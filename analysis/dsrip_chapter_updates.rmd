@@ -96,7 +96,7 @@ To understand the attitudes of DSRIP-participating providers toward DSRIP’s im
 
 ###### DSRIP has increased the level of care coordination between different DSRIP providers.
 
-```{r,  fig.retina = 2}
+```{r,  fig.retina = 4}
 new_dc1$prim_vis_bar_tot
 ```
 
@@ -104,7 +104,7 @@ new_dc1$prim_vis_bar_tot
 
 ###### DSRIP has increased the level of care coordination between DSRIP and non-DSRIP providers.
 
-```{r,  fig.retina = 2}
+```{r,  fig.retina = 4}
 new_dc2$prim_vis_bar_tot
 ```
 
@@ -256,7 +256,7 @@ m1$summary_stats
 (Comparison of Real and Target Mean Rates)
 
 ```{r, fig.retina = 2}
-ma1$uw_fig
+ma6$uw_fig
 ```
 
 `r ma1$caption_u`
@@ -274,7 +274,7 @@ m2$summary_stats
 (Comparison of Real and Target Mean Rates)
 
 ```{r, fig.retina = 2}
-ma2$uw_fig
+ma7$uw_fig
 ```
 
 `r ma2$caption_u`
