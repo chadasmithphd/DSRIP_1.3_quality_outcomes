@@ -1,0 +1,88 @@
+---
+title: "DSRIP 1.4 Updates"
+date: "2023-1-12"
+output: 
+  word_document:
+      reference_docx: Waiver_report_styles.dotx
+---
+
+```{r, include = FALSE, echo=TRUE, fig.retina = 2}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = TRUE) 
+source("/Users/tardis/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniversity/Team - waiver2_final - Documents/DSRIP/DSRIP_1.3_quality_outcomes/analysis/settings.R")
+source("/Users/tardis/Library/CloudStorage/OneDrive-SharedLibraries-TexasA&MUniversity/Team - waiver2_final - Documents/DSRIP/DSRIP_1.4_pophealth_PPEs/analysis/analysis.R")
+
+```
+###### Figure II.14 Potentially Preventable Admissions
+(PPA)
+**Change y axis**
+
+```{r,  fig.retina = 2}
+ppa_sum_graph_w
+```
+
+`r ppa_res_weight_statement`
+
+###### Figure II.15 Potentially Preventable Readmissions
+(PPR)
+
+```{r, fig.retina = 2}
+ppr_sum_graph_w
+```
+
+`r ppr_res_weight_statement`
+
+###### Figure II.16 Potentially Preventable Complications
+(PPC)
+
+```{r, fig.retina = 2}
+ppc_sum_graph_w
+```
+
+`r ppc_res_weight_statement`
+
+###### Figure II.17 Potentially Preventable ED Visits Actual-to-Expected Ratios
+(PPV)
+
+```{r, fig.retina = 2}
+ppv_sum_graph_w
+```
+
+`r ppv_res_weight_statement`
+
+# Appendix
+
+###### Table B.25 Summary Statistics by Year: Potentially Preventable Admissions (PPA)
+###### Summary Statistics by Year: 1.4.1 Potentially Preventable Admissions (PPA)
+
+```{r}
+ ppa_summary_stats 
+```
+
+`r ppa_summary_note`
+
+###### Table B.26 Summary Statistics by Year: Potentially Preventable Readmissions (PPR)
+###### Summary Statistics by Year: 1.4.2 Potentially Preventable Readmissions (PPR)
+
+```{r}
+ppr_summary_stats 
+```
+
+`r ppr_summary_note`
+
+###### Table B.27 Summary Statistics by Year: Potentially Preventable Complications (PPC)
+###### Summary Statistics by Year: 1.4.3 Potentially Preventable Complications (PPC)
+
+```{r}
+ppc_summary_stats 
+```
+
+`r ppc_summary_note`
+
+###### Table B.28 Summary Statistics by Year: Potentially Preventable Emergency Department Visits (PPV)
+###### Summary Statistics by Year: 1.4.4 Potentially Preventable Emergency Deparment visits (PPV)
+
+```{r}
+ppv_summary_stats
+```
+
+`r ppv_summary_note`
